@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arse</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            console.log('ARSE');
+            $('body').css('background-color', randomColor());
+            boi();
+        });
+        function boi() {
+
+            $('body').animate({backgroundColor: randomColor()}, 3000, boi);
+        }
+        function randomColor() {
+            return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        }
+    </script>
+</head>
+<body>
+<!--here's a fun trick! watch to this music: https://soundcloud.com/ujico/sadmachine-->
+</body>
+</html>
