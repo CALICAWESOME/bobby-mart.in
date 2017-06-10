@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- here's a fun trick! try listening to this music while you watch: https://soundcloud.com/ujico/sadmachine -->
 <head>
     <meta charset="UTF-8">
     <title>Hey</title>
@@ -7,21 +8,37 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="//code.jquery.com/color/jquery.color-2.1.2.js"></script>
     <script type="text/javascript">
+        var curr = 0;
+        var imgs = {{ files | safe }};
         $(document).ready(function() {
-            console.log('ARSE');
             $('body').css('background-color', randomColor());
             boi();
+            var image = $('img');
+            image.click(cycleImg);
         });
         function boi() {
-
             $('body').animate({backgroundColor: randomColor()}, 3000, boi);
         }
+        function cycleImg() {
+            // don't show the same image twice in a row
+            do {
+                var gen = randomRange(imgs.length);
+            } while (gen === curr);
+            curr = gen;
+            $(this).attr('src', '/static/' + imgs[curr]);
+        }
+        /////////////
+        // helpers //
+        /////////////
         function randomColor() {
             return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        }
+        function randomRange(max) {
+            return Math.floor(Math.random()*max);
         }
     </script>
 </head>
 <body>
-<!--here's a fun trick! try listening to this music while you watch: https://soundcloud.com/ujico/sadmachine-->
+<img src="{{ url_for('static', filename='m1saka0.png') }}" />
 </body>
 </html>
