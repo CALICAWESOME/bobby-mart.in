@@ -6,8 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    files = [_ for _ in listdir('static') if _.startswith('m1saka')]
-    return render_template('index.html', files=files)
+    return render_template('index.html')
 
 
 @app.route('/buh')
