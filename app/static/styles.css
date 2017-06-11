@@ -1,5 +1,8 @@
 html {
     height: 100%;
+
+    /* hide scrollbar for big images */
+    overflow: hidden;
 }
 body {
     height: 100%;
