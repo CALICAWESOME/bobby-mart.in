@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from os import listdir
 
 app = Flask(__name__)
 

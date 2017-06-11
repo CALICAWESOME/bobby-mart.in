@@ -22,3 +22,49 @@ img {
     -ms-user-select: none;
     user-select: none;
 }
+/* footer stuff */
+p {
+    margin: 0;
+}
+hr {
+    margin: 5px 0 2px 0;
+}
+a {
+    color: rgba(255,255,255,0.67);
+    text-decoration: none;
+}
+a:hover {
+    color: pink;
+}
+.footerTab {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: white;
+    background-color: rgba(0,0,0,0.15);
+
+    padding: 5px 20px;
+    filter: blur(1px);
+    transition: 0.5s;
+}
+.footerTab:hover {
+    filter: blur(0px);
+    bottom: 0 !important;
+}
+#creds {
+    /* positioning */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    border-top-right-radius: 1em;
+}
+#about {
+    position: fixed;
+    bottom: -338px;
+    right: 0;
+    width: 265px;
+    padding-bottom: 10px;
+
+    text-align: justify;
+    border-top-left-radius: 1em;
+}

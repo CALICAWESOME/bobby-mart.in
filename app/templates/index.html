@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hey</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Condensed" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
     <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="//code.jquery.com/color/jquery.color-2.1.2.js"></script>
@@ -11,5 +12,32 @@
 </head>
 <body>
 <img src="{{ url_for('static', filename='m1saka0.png') }}" />
+<div id="creds" class="footerTab">
+    <p>Cool pictures by <a href="http://m1saka.tumblr.com/" target="_blank">m1saka</a></p>
+</div>
+<div id="about" class="footerTab">
+    <p style="text-align: center">About</p>
+    <hr>
+    <p>
+        Hi! My name is Bobby and I own this domain.
+        This website was made entirely from scratch!
+        You can look at the source code <a href="https://github.com/CALICAWESOME/bobby-mart.in"  target="_blank">here</a>!
+        It's quite simple, for now. Sometimes it changes when I'm feeling ambitious!
+    </p>
+    <hr>
+    <p>
+        This website was built using <a href="https://www.python.org/" target="_blank">Python</a> and the
+        <a href="http://flask.pocoo.org/" target="_blank">Flask</a> web framweork. The Flask app is run with
+        <a href="https://httpd.apache.org/" target="_blank">Apache</a> on a
+        <a href="https://cloud.google.com/compute/" target="_blank">Google Compute Engine</a> virtual machine.
+        The virtual machine is so small, it only has 600mb of RAM!
+        The VM costs about $4.39 a month to run. In cojunction with the $12.00/year I pay for the domain name,
+        this website costs me about $65 a year to keep up. That's less than I pay for groceries every month!
+    </p>
+    <hr>
+    <p>
+        There is a fun easter egg hidden in this site, can you find it?
+    </p>
+</div>
 </body>
 </html>
