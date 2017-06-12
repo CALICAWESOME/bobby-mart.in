@@ -39,9 +39,11 @@ a:hover {
 .footerTab {
     font-family: "Ubuntu Condensed", sans-serif;
     color: white;
-    background-color: rgba(0,0,0,0.15);
+    text-shadow: 0 1px 3px #000;
 
+    background-color: rgba(0,0,0,0.15);
     padding: 5px 20px;
+
     filter: blur(1px);
     transition: 0.5s;
 }
