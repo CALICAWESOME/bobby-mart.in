@@ -9,7 +9,7 @@ $(document).ready(function() {
         interval = setInterval(function() {
             x = randomRange(shakeRange)-(shakeRange/2);
             y = randomRange(shakeRange)-(shakeRange/2);
-            $('img').css({'-webkit-transform':'translate(' + x + 'px,' + y + 'px)'});
+            image.css({'-webkit-transform':'translate(' + x + 'px,' + y + 'px)'});
         }, 10);
     },
     function() {

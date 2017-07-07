@@ -13,5 +13,10 @@ def buh():
     return 'buh'
 
 
+@app.route('/resume')
+def resume():
+    return app.send_static_file('resume.pdf')
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

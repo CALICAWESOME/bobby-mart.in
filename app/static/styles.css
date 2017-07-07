@@ -36,20 +36,29 @@ a {
 a:hover {
     color: pink;
 }
-.footerTab {
+.tab {
     font-family: "Ubuntu Condensed", sans-serif;
     color: white;
     text-shadow: 0 1px 3px #000;
 
-    background-color: rgba(0,0,0,0.15);
-    padding: 5px 20px;
-
     filter: blur(1px);
     transition: 0.5s;
 }
-.footerTab:hover {
+.tab:hover {
     filter: blur(0px);
     bottom: 0 !important;
+}
+.tabHeader, .tabBody {
+    background-color: rgba(0,0,0,0.15);
+}
+.tabHeader {
+    width: 150px;
+    text-align: center;
+    padding: 5px 20px;
+}
+.tabBody {
+    text-align: justify;
+    padding: 10px 20px;
 }
 #creds {
     /* positioning */
@@ -60,13 +69,19 @@ a:hover {
     text-align: center;
     border-top-right-radius: 1em;
 }
+#creds .tabHeader {
+    border-radius: 0 1em 0 0;
+}
 #about {
     position: fixed;
-    bottom: -338px;
+    bottom: -396px;
     right: 0;
     width: 265px;
-    padding-bottom: 10px;
-
-    text-align: justify;
-    border-top-left-radius: 1em;
+}
+#about > * {
+    float: right;
+    border-radius: 0.5em 0 0 0;
+}
+#about .tabHeader {
+    border-radius: 1em 0 0 0;
 }
