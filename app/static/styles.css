@@ -26,9 +26,6 @@ img {
 p {
     margin: 0;
 }
-hr {
-    margin: 5px 0 2px 0;
-}
 a {
     color: rgba(255,255,255,0.67);
     text-decoration: none;
@@ -37,7 +34,7 @@ a:hover {
     color: pink;
 }
 .tab {
-    font-family: "Ubuntu Condensed", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
     text-shadow: 0 1px 3px #000;
 
@@ -52,7 +49,7 @@ a:hover {
     background-color: rgba(0,0,0,0.15);
 }
 .tabHeader {
-    width: 150px;
+    width: 200px;
     text-align: center;
     padding: 5px 20px;
 }
@@ -74,7 +71,7 @@ a:hover {
 }
 #about {
     position: fixed;
-    bottom: -396px;
+    bottom: -472px;
     right: 0;
     width: 265px;
 }
