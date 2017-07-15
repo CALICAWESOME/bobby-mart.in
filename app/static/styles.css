@@ -55,7 +55,7 @@ a:hover {
 }
 .tabBody {
     text-align: justify;
-    padding: 10px 20px;
+    padding: 20px;
 }
 #creds {
     /* positioning */
@@ -70,14 +70,13 @@ a:hover {
     border-radius: 0 1em 0 0;
 }
 #about {
-    position: fixed;
-    bottom: -472px;
+    position: fixed;;
     right: 0;
-    width: 265px;
+    width: 500px;
 }
 #about > * {
     float: right;
-    border-radius: 0.5em 0 0 0;
+    border-radius: 1em 0 0 0;
 }
 #about .tabHeader {
     border-radius: 1em 0 0 0;
