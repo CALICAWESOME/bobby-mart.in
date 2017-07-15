@@ -5,15 +5,15 @@ $(document).ready(function() {
     $('body').css('background-color', randomColor());
     cycleColor();
     var $image = $('img'), interval;
-    $image.hover(function() {
+    $image.mouseenter(function() {
         var x, y, shakeRange = 3;
         interval = setInterval(function() {
             x = randomRange(shakeRange)-(shakeRange/2);
             y = randomRange(shakeRange)-(shakeRange/2);
             $image.css({'-webkit-transform':'translate(' + x + 'px,' + y + 'px)'});
         }, 10);
-    },
-    function() {
+    });
+    $image.mouseleave(function() {
         clearInterval(interval);
         $(this).css({'-webkit-transform':'translate(0,0)'})
     });
