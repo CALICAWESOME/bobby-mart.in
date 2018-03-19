@@ -1,0 +1,83 @@
+html {
+	height: 100%;
+
+	/* hide scrollbar for big images */
+	overflow: hidden;
+}
+body {
+	height: 100%;
+	margin: 0;
+
+	/* for centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	margin: 0;
+	filter: blur(5px);
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* footer stuff */
+p {
+	margin: 0;
+}
+a {
+	color: rgba(255,255,255,0.67);
+	text-decoration: none;
+}
+a:hover {
+	color: pink;
+}
+.tab {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+
+	/*TODO: animate the blur yourself?*/
+	filter: blur(1px);
+	transition: 0.5s;
+}
+.tab:hover {
+	filter: blur(0px);
+	bottom: 0 !important;
+}
+.tabHeader, .tabBody {
+	background-color: rgba(0,0,0,0.15);
+}
+.tabHeader {
+	width: 200px;
+	text-align: center;
+	padding: 5px 20px;
+}
+.tabBody {
+	text-align: justify;
+	padding: 20px;
+}
+#creds {
+	/* positioning */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	text-align: center;
+	border-top-right-radius: 1em;
+}
+#creds .tabHeader {
+	border-radius: 0 1em 0 0;
+}
+#about {
+	position: fixed;;
+	right: 0;
+	width: 500px;
+}
+#about > * {
+	float: right;
+	border-radius: 1em 0 0 0;
+}
+#about .tabHeader {
+	border-radius: 1em 0 0 0;
+}

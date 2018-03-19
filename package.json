@@ -1,0 +1,22 @@
+{
+  "name": "bobby-mart.in",
+  "version": "1.0.0",
+  "description": "ME WEBSITE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CALICAWESOME/bobby-mart.in.git"
+  },
+  "author": "Bobby  Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CALICAWESOME/bobby-mart.in/issues"
+  },
+  "homepage": "https://github.com/CALICAWESOME/bobby-mart.in#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
